@@ -111,7 +111,24 @@ li{
 
 .navbar__phone__tablet{
     display: none;
+} 
+.navbar__messages__tablet{
+    display: none;
+    
+
+   
 }
+.navbar__contacts__tablet{
+    display: block;
+   
+}
+.navbar__separator__tablet{
+    display: none;
+}
+.body__worklist{
+    display: none;
+}
+
 }
 @media only screen and (min-width: 768px) and (max-width: 1119px) {
     ul {
@@ -131,51 +148,122 @@ li{
       }
     
       .navbar__menu {
-        flex: 1;
+        margin-left: 10px;
+        
+        margin-right: 12px;
+        justify-content: right;
+        float: right;
+      }
+      .nav-menu svg{
+        justify-content: right;
+        float: right;
+        margin-left: 25px;
+        padding-left: 75px;
       }
     
       .navbar__logo {
-        flex: 2;
-        margin-left: 20px; /* Adjust margin as needed */
+        margin-left: 12px;
+    
+        
       }
     
       .navbar__setting {
         /* flex: 1; */
-        margin-left: 20%;
-         /* Move to the right */
-        margin-right: 0px;  
-        /* float: right; */
+        margin-left: 12px;
+         
         justify-content: right;
     }
-    .navbar__setting svg{
-     padding: 10px;
-     float: right;
-    }
+    
     
       .navbar__search {
         /* flex: 1; */
-        margin-left: 5px;
+        margin-left: 12px;
         margin-right: 5px; 
         justify-content: right;  
     }
     .navbar__search svg {
         /* padding-left: 30px;  */
         
-        padding-right: 15px; 
+        padding-right: 0px; 
+        padding-bottom: 4px;
         float:inline-end;
     }
       .navbar__phone__tablet {
         display: block;
-        margin-right: 0px;
+        margin-right: 12px;
         flex: 1;
         
       }
       .navbar__phone__tablet svg{
         float: right;
-        padding: 5px;
+        padding-bottom: 4px;
+        
       }
     
       .body__image {
         display: none;
       }
+      .navbar__messages__tablet{
+        display: block;
+        margin-right: 12px;
+       
+      }
+
+      .navbar__contacts__tablet{
+        display: block;
+        margin-right: 12px;
+       
+    }
+    .navbar__separator__tablet{
+        display: block;
+        border-left: 2px solid #8f8b8b;
+        height:30px;
+        margin: 0 12px 0px 12px;
+       
+    }
+    .body__title{
+        margin: 30px 0px;
+        color: black;
+        padding-left: 15px;
+        font-size: 28px;
+        
+        border-left: 5px solid aqua;
+        border-radius: 0 3px 6px 0 ;
+    
+    
+    }
+    .body__worklist{
+        display: block;
+        display: inline flex;
+        margin-left: 25px;
+    }
+    .list__repairable{
+        border: 1px solid #53aadd;
+        margin-right: 15px;
+        padding: 5px;
+        padding-right: 25px;
+        border-radius: 4px;
+    }
+    .list__additional{
+        border: 1px solid #53aadd;
+        margin-right: 15px;
+        padding: 5px;
+        padding-right: 25px;
+        border-radius: 4px;
+    }
+    .list__services{
+        border: 1px solid #53aadd;
+        margin-right: 15px;
+        padding: 5px;
+        padding-right: 25px;
+        border-radius: 4px;
+    }
+    .list__special{
+        border: 1px solid #53aadd;
+        margin-right: 15px;
+        padding: 5px;
+        padding-right: 25px;
+        border-radius: 4px;
+    }
+
   }
