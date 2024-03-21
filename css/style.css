@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 *{
     margin: 0%;
     padding: 0%;
     font-family: Roboto;
+    background-color: #F8F8F8;
 }
 @media only screen  and (max-width: 767px) {
     
@@ -114,7 +116,9 @@ li{
 } 
 .navbar__messages__tablet{
     display: none;
-    
+}    
+.body__description__tablet{
+    display: none;
 
    
 }
@@ -128,7 +132,21 @@ li{
 .body__worklist{
     display: none;
 }
-
+.body__main__tablet{
+    display: none;
+}
+.navbar__submit--desktop{
+    display: none;
+   }
+   .navbar__request--desktop{
+    display: none;
+   }
+   .body__reviews__desktop{
+    display: none;
+   }
+   .body__reviews__desktop{
+    display: none;
+   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1119px) {
     ul {
@@ -236,34 +254,269 @@ li{
         display: block;
         display: inline flex;
         margin-left: 25px;
+        margin-bottom: 30px;
     }
     .list__repairable{
-        border: 1px solid #53aadd;
+        
         margin-right: 15px;
         padding: 5px;
         padding-right: 25px;
         border-radius: 4px;
     }
     .list__additional{
-        border: 1px solid #53aadd;
+       
         margin-right: 15px;
         padding: 5px;
         padding-right: 25px;
         border-radius: 4px;
     }
     .list__services{
-        border: 1px solid #53aadd;
+        
         margin-right: 15px;
         padding: 5px;
         padding-right: 25px;
         border-radius: 4px;
     }
     .list__special{
-        border: 1px solid #53aadd;
+        
         margin-right: 15px;
         padding: 5px;
         padding-right: 25px;
         border-radius: 4px;
     }
+    .list__additional:hover,
+    .list__repairable:hover,
+    .list__services:hover,
+    .list__special:hover {
+        border: 1px solid #B8FFEC;
+    }
 
+    /* Description Section */
+    .body__main__tablet{
+        display: block;
+        display: inline-flex;
+        width: 100%;
+    }
+    .body__description__tablet{
+        width: 50%;
+        font-size: 20px;
+        font-weight: 400px;
+        padding: 4px;
+    }
+    .body__description__tablet{
+        
+        padding-bottom: 30px;
+    }
+    .body__description__tablet p{
+        margin-bottom: 20px;
+    }
+    .body__image__cps{
+        width: 50%;
+    }
+    
+        .body__readmore__tablet svg{
+            padding-top: 7px;
+            padding-right: 7px;
+            margin-left: 20px;
+        
+    }
+    .body__readmore__tablet{
+        
+        display: inline-flex;
+        flex-direction: row;
+        margin-left: 30px;
+        color: black;
+        margin-top: 30px;
+        padding-left: 5px;
+        font-size: 20px;
+    
+    }
+    .body__readmore{
+        display: none;
+    }
+   .body__description{
+    display: none;
+   }
+   .body__repairable{
+    display: none;
+   }
+   .nav__list--desktop{
+    display: none;
+   }
+   .navbar__submit--desktop{
+    display: none;
+   }
+   .navbar__request--desktop{
+    display: none;
+   }
+  }
+
+  @media only screen and (min-width: 1120px){
+    *{
+        font-family: Roboto, sans-serif;
+        
+    }
+    ul {
+        margin-top: 2%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        /* justify-content:space-between; */
+        align-items: center;
+        /* padding: 10px; */
+
+      }
+    
+      li {
+        text-decoration: none;
+        /* margin-right: 20px; */
+        margin-right: 20px;
+        list-style-type: none;
+        font-size: 18px; /* Adjust the font size as needed */
+      }
+      .navbar__logo{
+        display: none;
+      }
+      .navbar__setting {
+        /* flex: 1; */
+        /* margin-left: 12px; */
+         
+        justify-content: right;
+    }
+    
+    
+      .navbar__search {
+        /* flex: 1; */
+        /* margin-left: 12px; */
+        margin-right: 10px; 
+        justify-content: right;  
+    }
+    .navbar__search svg{
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    .navbar__list--desktop{
+        display: block;
+        margin-left: 45px;
+        font-weight:900;
+        font-size: 18px;
+        margin-right: 48%;
+    }
+    .navbar__submit--desktop{
+        display: block;
+        margin: 0px 10px;
+    }
+    .navbar__contacts__tablet{
+        display: none;
+    }
+    .navbar__messages__tablet{
+        display: none;
+    }
+    .navbar__phone__tablet{
+        display: none;
+    }
+    
+    .navbar__request--desktop{
+        display: block;
+        margin: 0px 10px;
+    }
+    .navbar__menu{
+        display: none;
+    }
+    .body__image__cps{
+        width: 48%;
+    }
+    .body__image {
+        display: none;
+      }
+      .body__title{
+        display: none;
+      }
+      .body__readmore__tablet{
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .body__readmore__tablet svg{
+        padding-right: 10px;
+      }
+      .body__reviews__desktop{
+        display: block;
+        margin-left: 50px;
+      }
+      .body__description__tablet{
+        display: block;
+        font-size: 17px;
+        margin: 20px 20px 0px 20px;
+      }
+      .body__description--desktop{
+        display: block;
+
+      }
+      .body__main__tablet{
+        display: block;
+        display: inline-flex;
+        /* width: 100%; */
+        padding: 10px 20px;
+    }
+    .body__repairable{
+        display: none;
+    }
+.body__description{
+    display: none;
+}
+.body__readmore{
+    display: none;
+}
+.body__worklist--desktop{
+    display: block;
+    margin-right: 5px;
+    display: inline-flex;
+    width: 95%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.list__brands{
+    
+    margin-right: 5%;
+    padding: 5px;
+    padding-right: 25px;
+    border-radius: 4px;
+}
+.list__repairable{
+    
+    margin-right: 5%;
+    padding: 5px;
+    padding-right: 25px;
+    border-radius: 4px;
+}
+.list__locations{
+   
+    margin-right: 5%;
+    padding: 5px;
+    padding-right: 25px;
+    border-radius: 4px;
+}
+.list__services{
+    
+    margin-right: 5%;
+    padding: 5px;
+    padding-right: 25px;
+    border-radius: 4px;
+}
+.list__special{
+    
+    margin-right: 5%;
+    padding: 5px;
+    padding-right: 25px;
+    border-radius: 4px;
+}
+.list__brands:hover,
+.list__locations:hover,
+.list__repairable:hover,
+.list__services:hover,
+.list__special:hover {
+    border: 2px solid #B8FFEC;
+}
   }
