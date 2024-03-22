@@ -7,18 +7,25 @@
 }
 @media only screen  and (max-width: 767px) {
     
-
+    *{
+        font-family: Roboto, sans-serif;
+        
+    }
 navbar{
     background-color: antiquewhite;
+    width: 100%;
+}
+.body__main--mobile .body__image__cps{
+    width: 100%;
 }
 
 ul{
     margin-left: 5%;
     margin-right: 5%;
    display: inline-flex;
-   flex-direction: row;
-   
-   justify-content: space-between;
+   /* flex-direction: row; */
+   width: 96%;
+   /* justify-content: space-between; */
    align-items: center;
    padding: 10px;
 
@@ -28,22 +35,38 @@ li{
     margin-right: 20px;
     list-style-type: none;
 }
-
+.navbar__list--desktop{
+    display: none;
+}
+.navbar__contacts--tablet{
+    display: none;
+}
+.navbar__phone--tablet{
+    display: none;
+}
 .nav-menu{
     margin-left: 10px;
-    flex: 1;
+    margin-right: 10%;
 }
 .nav-logo{
-    flex: 2;
+    margin-right: 20%;
+    
+}
+.nav-logo svg{
+    font-size: 75px;
 }
 .nav-setting{
-    flex: 3;
+    margin-right: 10%;
+    margin-left: 0px;
 
 }
+
 .nav-search{
-    flex: 4;
+    margin-right: 10%;
 }
-
+.body__repairable{
+    display: none;
+}
 
 .nav-menu, .nav-logo, .nav-setting, .nav-search{
     margin: 0 10px;
@@ -54,6 +77,7 @@ li{
     margin: 0;
     
 }
+
 
 .body__title{
     margin: 0%;
@@ -66,7 +90,9 @@ li{
 
 
 }
-
+.body__main--mobile{
+    width: 100%;
+}
 .body__repairable{
     color: rgb(117, 110, 110);
     border: 2px solid rgb(43, 218, 203);
@@ -84,14 +110,15 @@ li{
 
 }
 
+
 .body__readmore{
     padding: 15px;
     display: inline-flex;
     flex-direction: row;
     margin-left: 20px;
     color: black;
-    
-    padding-left: 20px;
+    width: 90%;
+    padding-left: 10px;
     font-size: 20px;
 
 }
@@ -100,39 +127,42 @@ li{
     padding-right: 7px;
 }
 .body__image{
-    width: 320px;
+    padding-top: 5px;
     height: 300px;
-    overflow: hidden;
+    width: 100%;
+    /* overflow: hidden; */
 }
 
 .body__image img{
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
 }
 
-.navbar__phone__tablet{
+.navbar__phone--tablet{
     display: none;
 } 
-.navbar__messages__tablet{
+.navbar__messages--tablet{
     display: none;
 }    
-.body__description__tablet{
+
+.body__description--tablet{
     display: none;
 
    
 }
-.navbar__contacts__tablet{
+.navbar__contacts--tablet{
     display: block;
    
 }
-.navbar__separator__tablet{
+.navbar__separator--tablet{
     display: none;
 }
 .body__worklist{
     display: none;
 }
-.body__main__tablet{
+.body__main--tablet{
     display: none;
 }
 .navbar__submit--desktop{
@@ -141,15 +171,41 @@ li{
    .navbar__request--desktop{
     display: none;
    }
-   .body__reviews__desktop{
+   .body__reviews--desktop{
     display: none;
    }
-   .body__reviews__desktop{
+   .body__reviews--desktop{
     display: none;
    }
+   .navbar__contacts--tablet{
+    display: none;
+   }
+
+   .navbar__separator--mobile{
+    display: block;
+        border-left: 2px solid #8f8b8b;
+        height:30px;
+        margin: 0 7% 0px 20%;
+
+   }
+   .body__main--tablet{
+    width: 100%;
+}
+.body__image__cps{
+    width: 100%;
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 1119px) {
+    *{
+        font-family: Roboto, sans-serif;
+        
+    }
+    nav{
+    background-color: #FFFFFF;
+   }
+
     ul {
+        
         margin-left: 5%;
         display: flex;
         flex-direction: row;
@@ -157,17 +213,21 @@ li{
         align-items: center;
         padding: 10px;
       }
+      .navbar--tablet {
+   background-color: #FFFFFF;
+      }
     
       li {
         text-decoration: none;
         /* margin-right: 20px; */
         list-style-type: none;
         font-size: 18px; /* Adjust the font size as needed */
-      }
+        background-color: #FFFFFF; 
+    }
     
       .navbar__menu {
         margin-left: 10px;
-        
+        background-color: #FFFFFF; 
         margin-right: 12px;
         justify-content: right;
         float: right;
@@ -177,8 +237,12 @@ li{
         float: right;
         margin-left: 25px;
         padding-left: 75px;
+        background-color: #FFFFFF; 
       }
     
+      .navbar__list--desktop{
+        display: none;
+      }
       .navbar__logo {
         margin-left: 12px;
     
@@ -206,13 +270,13 @@ li{
         padding-bottom: 4px;
         float:inline-end;
     }
-      .navbar__phone__tablet {
+      .navbar__phone--tablet {
         display: block;
         margin-right: 12px;
         flex: 1;
         
       }
-      .navbar__phone__tablet svg{
+      .navbar__phone--tablet svg{
         float: right;
         padding-bottom: 4px;
         
@@ -221,18 +285,18 @@ li{
       .body__image {
         display: none;
       }
-      .navbar__messages__tablet{
+      .navbar__messages--tablet{
         display: block;
         margin-right: 12px;
        
       }
 
-      .navbar__contacts__tablet{
+      .navbar__contacts--tablet{
         display: block;
         margin-right: 12px;
        
     }
-    .navbar__separator__tablet{
+    .navbar__separator--tablet{
         display: block;
         border-left: 2px solid #8f8b8b;
         height:30px;
@@ -257,28 +321,28 @@ li{
         margin-bottom: 30px;
     }
     .list__repairable{
-        
+        background-color: #F8F8F8 ;
         margin-right: 15px;
         padding: 5px;
         padding-right: 25px;
         border-radius: 4px;
     }
     .list__additional{
-       
+        background-color: #F8F8F8 ;
         margin-right: 15px;
         padding: 5px;
         padding-right: 25px;
         border-radius: 4px;
     }
     .list__services{
-        
+        background-color: #F8F8F8 ;
         margin-right: 15px;
         padding: 5px;
         padding-right: 25px;
         border-radius: 4px;
     }
     .list__special{
-        
+        background-color: #F8F8F8 ;
         margin-right: 15px;
         padding: 5px;
         padding-right: 25px;
@@ -288,39 +352,43 @@ li{
     .list__repairable:hover,
     .list__services:hover,
     .list__special:hover {
-        border: 1px solid #B8FFEC;
+        border: 2px solid #B8FFEC;
+        background-color: #ffffff ;
     }
-
+.body__description--desktop{
+    display: none;
+}
     /* Description Section */
-    .body__main__tablet{
+    .body__main--tablet{
         display: block;
         display: inline-flex;
         width: 100%;
     }
-    .body__description__tablet{
+    .body__description--tablet{
         width: 50%;
         font-size: 20px;
         font-weight: 400px;
         padding: 4px;
+        margin: 5px 10px;
     }
-    .body__description__tablet{
+    .body__description--tablet{
         
         padding-bottom: 30px;
     }
-    .body__description__tablet p{
+    .body__description--tablet p{
         margin-bottom: 20px;
     }
     .body__image__cps{
         width: 50%;
     }
     
-        .body__readmore__tablet svg{
+        .body__readmore--tablet svg{
             padding-top: 7px;
             padding-right: 7px;
             margin-left: 20px;
         
     }
-    .body__readmore__tablet{
+    .body__readmore--tablet{
         
         display: inline-flex;
         flex-direction: row;
@@ -347,6 +415,15 @@ li{
     display: none;
    }
    .navbar__request--desktop{
+    display: none;
+   }
+   .list__brands{
+    display: none;
+   }
+   .list__locations{
+    display: none;
+   }
+   .body__reviews__desktop{
     display: none;
    }
   }
@@ -407,13 +484,13 @@ li{
         display: block;
         margin: 0px 10px;
     }
-    .navbar__contacts__tablet{
+    .navbar__contacts--tablet{
         display: none;
     }
-    .navbar__messages__tablet{
+    .navbar__messages--tablet{
         display: none;
     }
-    .navbar__phone__tablet{
+    .navbar__phone--tablet{
         display: none;
     }
     
@@ -433,19 +510,19 @@ li{
       .body__title{
         display: none;
       }
-      .body__readmore__tablet{
+      .body__readmore--tablet{
         margin-left: 20px;
         margin-top: 20px;
         font-size: 20px;
       }
-      .body__readmore__tablet svg{
+      .body__readmore--tablet svg{
         padding-right: 10px;
       }
-      .body__reviews__desktop{
+      .body__reviews--desktop{
         display: block;
         margin-left: 50px;
       }
-      .body__description__tablet{
+      .body__description--tablet{
         display: block;
         font-size: 17px;
         margin: 20px 20px 0px 20px;
@@ -454,7 +531,7 @@ li{
         display: block;
 
       }
-      .body__main__tablet{
+      .body__main--tablet{
         display: block;
         display: inline-flex;
         /* width: 100%; */
@@ -478,7 +555,7 @@ li{
     margin-bottom: 30px;
 }
 .list__brands{
-    
+    margin-left: 5%;
     margin-right: 5%;
     padding: 5px;
     padding-right: 25px;
@@ -502,12 +579,12 @@ li{
     
     margin-right: 5%;
     padding: 5px;
-    padding-right: 25px;
+    /* padding-right: 25px; */
     border-radius: 4px;
 }
 .list__special{
     
-    margin-right: 5%;
+    margin-right: 4%;
     padding: 5px;
     padding-right: 25px;
     border-radius: 4px;
@@ -518,5 +595,10 @@ li{
 .list__services:hover,
 .list__special:hover {
     border: 2px solid #B8FFEC;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+.list__additional{
+    display: none;
 }
   }
